@@ -60,19 +60,6 @@
 
 		table { width: 100%; }
 
-		/* --- lists --- */
-
-		.doc-content ul,
-		.doc-content ol {
-			padding-left: 1em;
-			margin: 0.35em 0;
-		}
-
-		.doc-content li {
-			padding-left: 0;
-			margin: 0.1em 0;
-		}
-
 		/* --- image sizing --- */
 
 		img {
@@ -81,6 +68,22 @@
 		}
 	</style>
 	<style type="text/css"> @import url(https://themes.googleusercontent.com/fonts/css?kit=OPeqXG-QxW3ZD8BtmPikfA);</style>
+	<style>
+		.doc-content ul,
+		.doc-content ol {
+			padding-left: 1em !important;
+			margin: 0.35em 0 !important;
+		}
+
+		.doc-content li {
+			padding-left: 0 !important;
+			margin: 0.1em 0 !important;
+		}
+
+		.doc-content li::marker { font-size: 1em; }
+
+		.doc-content li > *:first-child { margin-left: 0.3em; }
+	</style>
 </head>
 <body style="background-color:#ffffff">
 
