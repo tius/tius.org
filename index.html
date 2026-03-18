@@ -31,9 +31,47 @@
 
 		nav a:hover { background: rgba(128,128,128,0.15); }
 
+		.nav-group {
+			display: inline-block;
+			position: relative;
+			vertical-align: top;
+		}
+
+		.nav-group ul {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			list-style: none;
+			margin: 0;
+			padding: 0.25rem 0;
+			background: white;
+			border: 1px solid rgba(128,128,128,0.25);
+			border-radius: 3px;
+			white-space: nowrap;
+			z-index: 100;
+		}
+
+		.nav-group:hover ul { display: block; }
+
+		.nav-group ul li a { display: block; }
+
 		/* --- tables --- */
 
 		table { width: 100%; }
+
+		/* --- lists --- */
+
+		.doc-content ul,
+		.doc-content ol {
+			padding-left: 1em;
+			margin: 0.35em 0;
+		}
+
+		.doc-content li {
+			padding-left: 0;
+			margin: 0.1em 0;
+		}
 
 		/* --- image sizing --- */
 
